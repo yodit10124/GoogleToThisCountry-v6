@@ -63,8 +63,8 @@ setup_shortcut() {
     SCRIPT_SOURCE="$0"
     if [ "$SCRIPT_SOURCE" = "bash" ] || [ "$SCRIPT_SOURCE" = "-bash" ] || [[ "$SCRIPT_SOURCE" == *"/dev/fd/"* ]] || [ "$SCRIPT_SOURCE" = "/dev/stdin" ]; then
         echo -e "${YELLOW}正在通过镜像下载并安装脚本至 $LOCAL_SCRIPT ...${NC}"
-        curl -sSL "${GH_PROXY}https://raw.githubusercontent.com/edmond1294/GoogleToThisCountry/main/gttc.sh" -o "$LOCAL_SCRIPT" || \
-        wget -qO "$LOCAL_SCRIPT" "${GH_PROXY}https://raw.githubusercontent.com/edmond1294/GoogleToThisCountry/main/gttc.sh"
+        curl -sSL "${GH_PROXY}https://raw.githubusercontent.com/yodit10124/GoogleToThisCountry-v6/main/gttc.sh" -o "$LOCAL_SCRIPT" || \
+        wget -qO "$LOCAL_SCRIPT" "${GH_PROXY}https://raw.githubusercontent.com/yodit10124/GoogleToThisCountry-v6/main/gttc.sh"
     else
         if [ "$(readlink -f "$SCRIPT_SOURCE" 2>/dev/null)" != "$LOCAL_SCRIPT" ]; then
             cp -f "$(readlink -f "$SCRIPT_SOURCE")" "$LOCAL_SCRIPT" 2>/dev/null || true
