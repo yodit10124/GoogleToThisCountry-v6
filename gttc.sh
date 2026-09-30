@@ -14,10 +14,10 @@ NC='\033[0m'
 
 GH_PROXY="https://ghproxy.net/"
 
-PING_SCRIPT="/usr/local/bin/gttc_ping.sh"
-SERVICE_FILE_SYSTEMD="/etc/systemd/system/gttc-ping.service"
-SERVICE_FILE_OPENRC="/etc/init.d/gttc-ping"
-CONFIG_TAG_FILE="/etc/gttc_country.conf"
+PING_SCRIPT="/usr/local/bin/gttc_pingv6.sh"
+SERVICE_FILE_SYSTEMD="/etc/systemd/system/gttc-pingv6.service"
+SERVICE_FILE_OPENRC="/etc/init.d/gttc-pingv6"
+CONFIG_TAG_FILE="/etc/gttc_countryv6.conf"
 
 check_warp() {
     local ip
