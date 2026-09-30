@@ -249,10 +249,10 @@ enable_target_country() {
     # Google DoH: https://[2001:4860:4860::8888]/dns-query
     # 阿里 DoH: https://[2400:3200::1]/dns-query
     case "$c_choice" in
-        1) COUNTRY_NAME="🇹🇼 台湾"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2001:b000::/32"; LANG_HEADER="zh-TW,zh;q=0.9,en;q=0.8";;
-        2) COUNTRY_NAME="🇯🇵 日本"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2001:240::/32"; LANG_HEADER="ja-JP,ja;q=0.9,en;q=0.8";;
-        3) COUNTRY_NAME="🇲🇴 澳门"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2400:8700::/32"; LANG_HEADER="zh-MO,zh-TW;q=0.9,zh;q=0.8,en;q=0.7";;
-        4) COUNTRY_NAME="🇺🇸 美国"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2600::/16"; LANG_HEADER="en-US,en;q=0.9";;
+        1) COUNTRY_NAME="🇹🇼 台湾"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2403:a7c0::/32"; LANG_HEADER="zh-TW,zh;q=0.9,en;q=0.8";;
+        2) COUNTRY_NAME="🇯🇵 日本"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2001:7fa:7::/48"; LANG_HEADER="ja-JP,ja;q=0.9,en;q=0.8";;
+        3) COUNTRY_NAME="🇲🇴 澳门"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2402:e940:20::/43"; LANG_HEADER="zh-MO,zh-TW;q=0.9,zh;q=0.8,en;q=0.7";;
+        4) COUNTRY_NAME="🇺🇸 美国"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2600:8000::/24"; LANG_HEADER="en-US,en;q=0.9";;
         *) echo -e "${RED}无效选择！${NC}"; return;;
     esac
 
