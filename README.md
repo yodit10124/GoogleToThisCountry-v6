@@ -5,13 +5,13 @@
   <img src="https://img.shields.io/badge/Shell-Bash-orange?style=for-the-badge&logo=gnu-bash" alt="Bash">
 </p>
 
-**GoogleToThisCountry (GTTC)** 是一款专为 VPS 节点设计的 Google 定位重定向与送中/送台/送日/送美修复工具。通过 **EDNS Client Subnet (ECS) 伪装宣告** 与 **多维保活定时发包** 技术，强行纠正 Google 服务的地理位置识别，将您的 IP 重新送回指定的目标国家或地区。
+**GoogleToThisCountry (GTTC)** 是一款专为 VPS 节点设计的 Google 定位重定向与~~送中~~/送台/送日/送美修复工具。通过 **EDNS Client Subnet (ECS) 伪装宣告** 与 **多维保活定时发包** 技术，强行纠正 Google 服务的地理位置识别，将您的 IP 重新送回指定的目标国家或地区。
 
 ---
 
 ## 🌟 核心特色
 
-- **多地区支持**：一键切换至 🇹🇼 台湾、🇨🇳 中国大陆、🇯🇵 日本、🇲🇴 澳门、🇺🇸 美国。
+- **多地区支持**：一键切换至 🇹🇼 台湾~~、🇨🇳 中国大陆~~、🇯🇵 日本、🇲🇴 澳门、🇺🇸 美国。
 - **EDNS 子网宣告**：通过自定义 DNS 客户端子网（ECS），向 Google CDN 宣告特定地区 IP 段，精准获取对应区域的 IP 响应。
 - **多维保活机制**：后台轻量化服务，自动模拟移动端 HTTP/204 请求，定期向 Google 核心节点打卡，持续维持地区定位。
 - **极轻量无感**：纯 Shell 与 Python 逻辑，不占用额外的网络中转资源，完全不影响原有的 VPS 传输速度与延迟。
