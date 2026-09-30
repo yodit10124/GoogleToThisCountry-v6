@@ -12,7 +12,7 @@ YELLOW='\033[0;33m'
 CYAN='\033[0;36m'
 NC='\033[0m'
 
-GH_PROXY="https://ghp.ci/"
+GH_PROXY="https://ghproxy.net/"
 
 PING_SCRIPT="/usr/local/bin/gttc_ping.sh"
 SERVICE_FILE_SYSTEMD="/etc/systemd/system/gttc-ping.service"
