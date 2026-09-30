@@ -24,7 +24,7 @@
 在终端中直接运行以下单行指令即可启动脚本：
 
 ```bash
-bash <(curl -sSL https://raw.githubusercontent.com/edmond1294/GoogleToThisCountry/main/gttc.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/yodit10124/GoogleToThisCountry-v6/main/gttc.sh)
 ```
 
 后续随时在命令行输入：
