@@ -239,10 +239,9 @@ enable_target_country() {
     echo "         请选择目标国家 / 地区 (纯IPv6模式)"
     echo "================================================="
     echo " 1. 🇹🇼 台湾 (Taiwan) - 宣告 HiNet IPv6"
-    echo " 2. 🇨🇳 中国大陆 (China) - 宣告 ChinaTelecom IPv6"
-    echo " 3. 🇯🇵 日本 (Japan) - 宣告 NTT IPv6"
-    echo " 4. 🇲🇴 澳门 (Macao) - 宣告 CTM IPv6"
-    echo " 5. 🇺🇸 美国 (United States) - 宣告 美国家宽 IPv6"
+    echo " 2. 🇯🇵 日本 (Japan) - 宣告 NTT IPv6"
+    echo " 3. 🇲🇴 澳门 (Macao) - 宣告 CTM IPv6"
+    echo " 4. 🇺🇸 美国 (United States) - 宣告 美国家宽 IPv6"
     echo "================================================="
     read -p "请选择 [1-5]: " c_choice
 
@@ -251,10 +250,9 @@ enable_target_country() {
     # 阿里 DoH: https://[2400:3200::1]/dns-query
     case "$c_choice" in
         1) COUNTRY_NAME="🇹🇼 台湾"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2001:b000::/32"; LANG_HEADER="zh-TW,zh;q=0.9,en;q=0.8";;
-        2) COUNTRY_NAME="🇨🇳 中国大陆"; DOH_SERVER="https://[2400:3200::1]/dns-query"; ECS_IP="240e:fc::/32"; LANG_HEADER="zh-CN,zh;q=0.9,en;q=0.8";;
-        3) COUNTRY_NAME="🇯🇵 日本"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2001:240::/32"; LANG_HEADER="ja-JP,ja;q=0.9,en;q=0.8";;
-        4) COUNTRY_NAME="🇲🇴 澳门"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2400:8700::/32"; LANG_HEADER="zh-MO,zh-TW;q=0.9,zh;q=0.8,en;q=0.7";;
-        5) COUNTRY_NAME="🇺🇸 美国"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2600::/16"; LANG_HEADER="en-US,en;q=0.9";;
+        2) COUNTRY_NAME="🇯🇵 日本"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2001:240::/32"; LANG_HEADER="ja-JP,ja;q=0.9,en;q=0.8";;
+        3) COUNTRY_NAME="🇲🇴 澳门"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2400:8700::/32"; LANG_HEADER="zh-MO,zh-TW;q=0.9,zh;q=0.8,en;q=0.7";;
+        4) COUNTRY_NAME="🇺🇸 美国"; DOH_SERVER="https://[2001:4860:4860::8888]/dns-query"; ECS_IP="2600::/16"; LANG_HEADER="en-US,en;q=0.9";;
         *) echo -e "${RED}无效选择！${NC}"; return;;
     esac
 
